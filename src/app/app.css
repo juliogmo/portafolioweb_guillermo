@@ -1,0 +1,22 @@
+
+/* 🎨 Cada sección con degradado animado */
+section {
+
+  /* degradado azul marino oscuro a negro */
+  background: linear-gradient(90deg, #000000,#000000,#04051d, #040626,#04051d,#000000, #000000);
+  background-size: 20000% 20000%;
+  animation: sectionShift 10s ease-in-out infinite;
+}
+
+/* Animación de brillo/degradado */
+@keyframes sectionShift {
+  0% {
+    background-position: 10% 10%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 10% 10%;
+  }
+}

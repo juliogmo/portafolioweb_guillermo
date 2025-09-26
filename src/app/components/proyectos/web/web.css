@@ -1,0 +1,54 @@
+.projects-container { padding: 2%; color:white; text-align:center; }
+.title { font-size:2rem; color:#ff8c42; text-shadow:0 0 8px rgba(255,140,66,0.6); margin-bottom:20px; }
+
+.carousel-wrap { position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.nav-arrow { background: linear-gradient(135deg, rgba(255,140,66,0.12), rgba(255,140,66,0.03)); border:1px solid rgba(255,140,66,0.18); color:#ff8c42; font-size:2rem; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:10; }
+.projects-grid { display:flex; gap:20px; overflow:hidden; scroll-behavior:smooth; padding:10px 0; justify-content:start; width:100%; }
+.project-card { flex:0 0 320px; border-radius:12px; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); box-shadow:0 8px 24px rgba(0,0,0,0.45); display:flex; flex-direction:column; min-height:340px; }
+.img-frame { padding:10px; }
+.project-img { width:100%; height:160px; object-fit:cover; border-radius:10px; border:2px solid rgba(255,255,255,0.03); }
+.project-info { padding:12px; display:flex; flex-direction:column; gap:10px; align-items:center; }
+.meta { color:#ddd; font-size:0.95rem; }
+.buttons { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+.btn { padding:8px 12px; border-radius:10px; background:#00eaff; color:#000; border:none; cursor:pointer; font-weight:700; }
+.btn-demo { background:#ff8c42; color:#fff; }
+.btn:hover { opacity:0.95; }
+
+.modal { position:fixed; inset:0; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; z-index:2000; }
+.modal-content {
+  position: relative; /* necesario para que el botón se posicione dentro */
+}
+.modal-content { background:#0f1113; padding:18px; border-radius:12px; max-width:520px; width:92%; text-align:center; color:white; }
+.modal-content .btn-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  color: #ff8c42;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.tech-list { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:12px 0; }
+.tech { display:flex; gap:8px; align-items:center; background: rgba(255,255,255,0.02); padding:6px 10px; border-radius:10px; }
+.tech-icon { width:28px; height:28px; object-fit:contain; }
+.tech-name { color:#fff; font-weight:600; }
+
+.modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.75); display:flex; align-items:center; justify-content:center; z-index:3000; }
+.modal-full { width:96%; max-width:1100px; height:90vh; background:linear-gradient(180deg,#071018,#0f1620); border-radius:12px; padding:18px; overflow:hidden; color:white; display:flex; flex-direction:column; }
+.btn-close { position:absolute; right:14px; top:14px; background:transparent; border:none; color:#ff8c42; font-size:1.8rem; cursor:pointer; }
+
+.modal-body { display:flex; gap:18px; height:100%; padding-top:8px; }
+.left-col { flex:1.1; display:flex; flex-direction:column; align-items:center; gap:10px; }
+.img-frame-large { width:80%; max-width:420px; height:60vh; background:#071018; border-radius:10px; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+.img-frame-large img { width:100%; height:100%; object-fit:contain; }
+.right-col { flex:0.9; overflow-y:auto; padding-right:12px; }
+.tech-grid { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+
+/* responsive */
+@media (max-width:600px) {
+  .project-card { flex:0 0 100%; max-width:100%; min-height:320px; }
+  .nav-arrow { width:40px; height:40px; font-size:1.6rem; }
+  .modal-body { flex-direction:column; }
+  .img-frame-large { width:94%; height:40vh; }
+}

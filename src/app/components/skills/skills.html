@@ -1,0 +1,11 @@
+<div class="skills-container">
+  <div class="skill-category" *ngFor="let category of categories">
+    <h3>{{ category.name }}</h3>
+    <div class="skill-grid">
+      <div class="skill-card" *ngFor="let skill of category.items">
+        <img [src]="getSkillIcon(skill)" [alt]="skill" class="skill-icon"/>
+        <span class="skill-name">{{ skill }}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="projects-container">
+  <h2 class="title">Proyectos IA</h2>
+
+  <div class="carousel-wrap">
+    <button class="nav-arrow left" (click)="scrollPrev()" aria-label="Anterior">‹</button>
+
+    <div #grid class="projects-grid">
+      <div class="project-card" *ngFor="let proyecto of proyectos">
+        <div class="img-frame">
+          <img [src]="proyecto.imagen" [alt]="proyecto.titulo" class="project-img" />
+        </div>
+        <div class="project-info">
+          <h3>{{ proyecto.titulo }}</h3>
+          <p class="meta"><strong>Fecha:</strong> {{ proyecto.fecha }}</p>
+          <button (click)="abrirModal(proyecto)" class="btn-detalle">Ver más Info</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="nav-arrow right" (click)="scrollNext()" aria-label="Siguiente">›</button>
+  </div>
+</div>
+
+<!-- Modal fullscreen -->
+<div class="modal-backdrop" *ngIf="showModal">
+  <div class="modal-full">
+    <button class="btn-close" (click)="cerrarModal()">✕</button>
+    <div class="modal-body">
+      <div class="left-col">
+        <div class="img-carousel">
+          <button class="img-arrow img-left" (click)="prevSlide()">‹</button>
+          <div class="img-frame-large">
+            <img [src]="selectedProyecto?.imagenes[currentSlide]?.url" 
+                 [alt]="selectedProyecto?.imagenes[currentSlide]?.desc" />
+          </div>
+          <button class="img-arrow img-right" (click)="nextSlide()">›</button>
+        </div>
+        <p class="img-desc">{{ selectedProyecto?.imagenes[currentSlide]?.desc }}</p>
+      </div>
+      <div class="right-col">
+        <h2 class="modal-title">{{ selectedProyecto?.titulo }}</h2>
+        <p class="modal-meta"><strong>Fecha:</strong> {{ selectedProyecto?.fecha }}</p>
+
+        <h3 class="centered">Descripción</h3>
+        <p class="objetivo">{{ selectedProyecto?.objetivo }}</p>
+
+        <h3>Tecnologías</h3>
+        <div class="tech-grid">
+          <div class="tech" *ngFor="let tech of selectedProyecto?.tecnologias">
+            <img [src]="getTechIcon(tech)" [alt]="tech" class="tech-icon" />
+            <span class="tech-name">{{ tech }}</span>
+          </div>
+        </div>
+
+        <div class="repo-link">
+          <a href="https://github.com/" target="_blank" class="btn-github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            Ver en GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

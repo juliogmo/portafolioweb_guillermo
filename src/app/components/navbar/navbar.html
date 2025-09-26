@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/11605/11605306.png" alt="Logo" class="logo-img">
+      <a href="#home" class="logo">GJV</a>
+    </div>
+
+    <!-- Links escritorio -->
+    <ul class="nav-links">
+  <li><a href="#home" [class.active]="currentSection === 'home'"><i class="fas fa-home"></i> INICIO</a></li>
+  <li><a href="#proyectos" [class.active]="currentSection === 'proyectos'"><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
+  <li><a href="#skills" [class.active]="currentSection === 'skills'"><i class="fas fa-tools"></i> HABILIDADES</a></li>
+  <li><a href="#about" [class.active]="currentSection === 'about'"><i class="fas fa-user"></i> SOBRE MÍ</a></li>
+</ul>
+
+    <!-- Botones idioma / hamburguesa -->
+    <div class="nav-buttons">
+      <button class="menu-btn" (click)="menuOpen.set(!menuOpen())">
+        @if (!menuOpen()) {
+          &#9776;
+        } @else {
+          &times;
+        }
+      </button>
+    </div>
+  </div>
+
+  <!-- Menú móvil -->
+ 
+  <ul class="mobile-menu" [class.open]="menuOpen()">
+  <li><a href="#home" [class.active]="currentSection === 'home'" (click)="menuOpen.set(false)"><i class="fas fa-home"></i> Inicio</a></li>
+  <li><a href="#proyectos" [class.active]="currentSection === 'proyectos'" (click)="menuOpen.set(false)"><i class="fas fa-laptop-code"></i> Proyectos</a></li>
+  <li><a href="#skills" [class.active]="currentSection === 'skills'" (click)="menuOpen.set(false)"><i class="fas fa-lightbulb"></i> Habilidades</a></li>
+  <li><a href="#about" [class.active]="currentSection === 'about'" (click)="menuOpen.set(false)"><i class="fas fa-user"></i> Sobre mí</a></li>
+</ul>
+  
+</nav>

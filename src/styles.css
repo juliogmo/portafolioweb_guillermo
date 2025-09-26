@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #00eaff #3b3b3b; /* Firefox */
+}
+
+/* Chrome, Edge y Safari */
+::-webkit-scrollbar {
+  width: 12px;   /* ancho del scroll vertical */
+  height: 12px;  /* alto del scroll horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* color del fondo */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00eaff;  /* color del scroll */
+  border-radius: 10px;
+  border: 2px solid #f0f0f0; /* "espacio" entre scroll y borde */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* cuando pasas el mouse encima */
+}

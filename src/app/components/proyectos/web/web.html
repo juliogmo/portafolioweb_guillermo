@@ -1,0 +1,40 @@
+<div class="projects-container">
+  <h2 class="title">Proyectos Web</h2>
+
+  <div class="carousel-wrap">
+    <button class="nav-arrow left" (click)="scrollPrev()" aria-label="Anterior">‹</button>
+
+    <div #grid class="projects-grid">
+      <div class="project-card" *ngFor="let proyecto of proyectos; let i = index">
+        <div class="img-frame">
+          <img [src]="proyecto.imagen" [alt]="proyecto.titulo" class="project-img" />
+        </div>
+        <div class="project-info">
+          <h3>{{ proyecto.titulo }}</h3>
+          <p class="meta">{{ proyecto.descripcion }}</p>
+          <div class="buttons">
+            <a *ngIf="proyecto.github" [href]="proyecto.github" target="_blank" class="btn">GitHub</a>
+            <a *ngIf="proyecto.demo" [href]="proyecto.demo" target="_blank" class="btn btn-demo">Demo</a>
+            <button class="btn" (click)="openTechModal(proyecto.tecnologias)">Tecnologías</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="nav-arrow right" (click)="scrollNext()" aria-label="Siguiente">›</button>
+  </div>
+</div>
+
+<!-- Modal tecnologías -->
+<div class="modal" *ngIf="showTechModal" (click)="closeTechModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="btn-close" (click)="closeTechModal()">✕</button>
+    <h3>Tecnologías</h3>
+    <div class="tech-list">
+      <div class="tech" *ngFor="let tech of tecnologiasModal">
+        <img [src]="getTechIcon(tech)" [alt]="tech" class="tech-icon" />
+        <div class="tech-name">{{ tech }}</div>
+      </div>
+    </div>
+  </div>
+</div>
