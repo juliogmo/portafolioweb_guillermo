@@ -261,7 +261,7 @@
 /* Responsive modal */
 @media (max-width: 800px) {
   .modal-body { flex-direction: column; padding: 20px; }
-  .img-frame-large { width: 90%; height: 30vh; }
+  .img-frame-large { width: 90%; height: 50vh; }
   .right-col { width: 100%; padding: 10px; }
-  .btn-close { font-size: 2rem; right: 10px; top: 10px; }
+  .btn-close { font-size: 1.5rem; right: 20px; top: 20px; }
 }
