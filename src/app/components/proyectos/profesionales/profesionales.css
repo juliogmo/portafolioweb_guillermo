@@ -131,7 +131,7 @@
   z-index: 3000; 
 }
 .modal-full { 
-  width: 950%; 
+  width: 100%; 
   max-width: 1200px; 
   height: 92vh; 
   background: linear-gradient(180deg,#0e1114,#13171b); 
@@ -144,12 +144,12 @@
 }
 .btn-close { 
   position: absolute; 
-  right: 14px; 
-  top: 14px; 
-  background: transparent; 
+  right: 15px; 
+  top: 15px; 
+   background: linear-gradient(180deg,#0e1114,#13171b); 
   color:#00eaff; 
   border:none; 
-  font-size: 1.9rem; 
+  font-size: 1.6rem; 
   cursor:pointer; 
 }
 .modal-body { 
@@ -260,8 +260,8 @@
 
 /* Responsive modal */
 @media (max-width: 800px) {
-  .modal-body { flex-direction: column; padding: 12px; }
-  .img-frame-large { width: 94%; height: 40vh; }
+  .modal-body { flex-direction: column; padding: 20px; }
+  .img-frame-large { width: 90%; height: 30vh; }
   .right-col { width: 100%; padding: 10px; }
   .btn-close { font-size: 2.2rem; right: 12px; top: 10px; }
 }
