@@ -116,8 +116,8 @@
 
 /* Responsive móvil */
 @media (max-width:600px){
-  .project-card { flex: 0 0 100%; max-width:100%; min-height:200px; }
-  .nav-arrow { width:40px; height:40px; font-size:1.8rem; }
+  .project-card { flex: 0 0 100%; max-width:100%; min-height:100px; }
+  .nav-arrow { width:10px; height:40px; font-size:1.2rem; }
 }
 
 /* ================== MODAL FULLSCREEN ================== */
@@ -261,7 +261,7 @@
 /* Responsive modal */
 @media (max-width: 800px) {
   .modal-body { flex-direction: column; padding: 10px; }
-  .img-frame-large { width: 80%; height: 30vh; }
-  .right-col { width: 100%; padding: 10px; }
+  .img-frame-large { width: 80%; height: 25vh; }
+  .right-col { width: 100%; padding: 10px;margin-bottom: 20px;padding-bottom: 20px; }
   .btn-close { font-size: 1.4rem; right: 30px; top: 30px; }
 }

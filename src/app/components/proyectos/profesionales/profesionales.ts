@@ -141,7 +141,7 @@ export class Profesionales implements AfterViewInit, OnDestroy {
     {
       id: 1,
       titulo: 'Portal de Servicios - It Matters',
-      imagen: 'https://i.ibb.co/5WL4Qsfk/portal-inicio.png',
+      imagen: 'assets/imgproyectos/itmatters/portal_inicio.png',
       empresa: 'CONSULTORA TI "ITMATTERS"',
       rol:'Desarrollador de Software',
       fecha: ' 08/01/2025 - 30/04/2025',
@@ -153,20 +153,20 @@ export class Profesionales implements AfterViewInit, OnDestroy {
         + 'se habilitó la trazabilidad de procesos críticos relacionados con soporte y monitoreo de sistemas, '
         + 'y se optimizó la productividad mediante la alineación con las mejores prácticas de TI.',
       imagenes: [
-        { url: 'https://i.ibb.co/5WL4Qsfk/portal-inicio.png', desc: 'Pantalla de inicio de portal de empleados' },
-        { url: 'https://i.ibb.co/jv8qw4nR/Single-Sing-On.png', desc: 'Implementación de SSO' },
-        { url: 'https://i.ibb.co/TxSr5L1j/catalogo-item.png', desc: 'Configuración de Catalogo de servicios (Demo)' },
-        { url: 'https://i.ibb.co/39QVVh2j/servicio.png', desc: 'Catalogo de Servicios (Demo)' },
-        { url: 'https://i.ibb.co/VYK429Gf/formulario-con-busqueda.png', desc: 'Formulario de registro de incidentes con busqueda asistida(Demo)' },
-        { url: 'https://i.ibb.co/VW6SGXgd/work-flows.png', desc: 'Uso de WorkFlows para automatización de tareas (Demo)' },
-        { url: 'https://i.ibb.co/FqnJPGSp/workspace.png', desc: 'Agent Workspace Configurado para Gestión de tareas asignadas (Demo)' },
-      ],
+      { url: 'assets/imgproyectos/itmatters/portal_inicio.png', desc: 'Pantalla de inicio de portal de empleados' },
+      { url: 'assets/imgproyectos/itmatters/Single_Sing_On.png', desc: 'Implementación de SSO' },
+      { url: 'assets/imgproyectos/itmatters/catalogo_item.png', desc: 'Configuración de Catálogo de servicios (Demo)' },
+      { url: 'assets/imgproyectos/itmatters/servicio.png', desc: 'Catálogo de Servicios (Demo)' },
+      { url: 'assets/imgproyectos/itmatters/formulario_con_busqueda.png', desc: 'Formulario de registro de incidentes' },
+      { url: 'assets/imgproyectos/itmatters/work_flows.png', desc: 'Uso de WorkFlows para automatización de tareas (Demo)' },
+      { url: 'assets/imgproyectos/itmatters/workspace.png', desc: 'Agent Workspace para Gestión de tareas (Demo)' },
+    ],
       tecnologias: ['Servicenow', 'Workflows', 'Angular', 'Github actions', 'Azure','Azure db']
     },
     {
       id: 2,
       titulo: 'Plataforma Delivery - QuickDineHub',
-      imagen: 'https://i.ibb.co/8LNkfKGL/pagina-inicio.png',
+      imagen: 'assets/imgproyectos/quick/pagina_inicio.png',
       empresa: 'QuickDineHub',
       rol:'Desarrollador full-stack',
       fecha: ' 01/10/2023 -30/08/2024',
@@ -179,29 +179,29 @@ export class Profesionales implements AfterViewInit, OnDestroy {
         + 'para la gestión del proyecto se utilizó Jira y se aplicó control de versiones con GitHub, '
         + 'todo bajo metodologías ágiles SCRUM y Kanban, utilizando herramientas de pruebas unitarias y automáticas como Jest, Jasmine y Postman.',
       imagenes: [
-        { url: 'https://i.ibb.co/8LNkfKGL/pagina-inicio.png', desc: 'Página de Inicio' },
-        { url: 'https://i.ibb.co/rGN18M8R/login-restaurant.png', desc: 'Login por perfil' },
-        { url: 'https://i.ibb.co/cSXsKP09/catalogo-productos.png', desc: 'Catálogo de Productos (cliente)' },
-        { url: 'https://i.ibb.co/yBMZWjGr/catalogo-restaurantes.png', desc: 'Catálogo de Restaurantes (cliente)' },
-        { url: 'https://i.ibb.co/9mZmhz30/ofertas.png', desc: 'Ofertas de productos' },
-        { url: 'https://i.ibb.co/VW3PGT5D/Pedidos-recomendaciones.png', desc: 'Seguimiento de pedidos y Sistema de Recomendación' },
-        { url: 'https://i.ibb.co/MDC6ts4x/carrito.png', desc: 'Carrito de Compras y métodos de pago' },
-        { url: 'https://i.ibb.co/8gtJ0yQG/formulario-productos.png', desc: 'Formulario de productos (Restaurante)' },
-        { url: 'https://i.ibb.co/pv6fc46G/formulario-ofertas.png', desc: 'Formulario de ofertas (Restaurante)' },
-        { url: 'https://i.ibb.co/tpWMQdhf/ordenes.png', desc: 'Bandeja de Pedidos (Restaurante)' },
-        { url: 'https://i.ibb.co/ZRgn5JtM/inicio-ionic.jpg', desc: 'Login en App Móvil' },
-        { url: 'https://i.ibb.co/ccGZ1CYy/catalogo-ionic.jpg', desc: 'Catálogo de productos (Móvil)' },
-        { url: 'https://i.ibb.co/yBW81jZw/carrito-ionic.jpg', desc: 'Carrito de compras (Móvil)' },
-        { url: 'https://i.ibb.co/FR8ZtPf/mis-pedidos-ionic.jpg', desc: 'Seguimiento de pedidos' },
-        { url: 'https://i.ibb.co/svTY3MNt/notificaciones-push.png', desc: 'Notificaciónes Push' },
-        { url: 'https://i.ibb.co/B586SCcm/Alexa-skills.png', desc: 'Skills con Alexa para hacer compra de productos' }
+        { url: 'assets/imgproyectos/quick/pagina_inicio.png', desc: 'Página de Inicio' },
+  { url: 'assets/imgproyectos/quick/login_restaurant.png', desc: 'Login por perfil' },
+  { url: 'assets/imgproyectos/quick/catalogo_productos.png', desc: 'Catálogo de Productos (cliente)' },
+  { url: 'assets/imgproyectos/quick/catalogo_restaurantes.png', desc: 'Catálogo de Restaurantes (cliente)' },
+  { url: 'assets/imgproyectos/quick/ofertas.png', desc: 'Ofertas de productos' },
+  { url: 'assets/imgproyectos/quick/Pedidos_recomendaciones.png', desc: 'Seguimiento de pedidos y Sistema de Recomendación' },
+  { url: 'assets/imgproyectos/quick/carrito.png', desc: 'Carrito de Compras y métodos de pago' },
+  { url: 'assets/imgproyectos/quick/formulario_productos.png', desc: 'Formulario de productos (Restaurante)' },
+  { url: 'assets/imgproyectos/quick/formulario_ofertas.png', desc: 'Formulario de ofertas (Restaurante)' },
+  { url: 'assets/imgproyectos/quick/ordenes.png', desc: 'Bandeja de Pedidos (Restaurante)' },
+  { url: 'assets/imgproyectos/quick/inicio_ionic.jpg', desc: 'Login en App Móvil' },
+  { url: 'assets/imgproyectos/quick/catalogo_ionic.jpg', desc: 'Catálogo de productos (Móvil)' },
+  { url: 'assets/imgproyectos/quick/carrito_ionic.jpg', desc: 'Carrito de compras (Móvil)' },
+  { url: 'assets/imgproyectos/quick/mis_pedidos_ionic.jpg', desc: 'Seguimiento de pedidos' },
+  { url: 'assets/imgproyectos/quick/notificaciones_push.png', desc: 'Notificaciónes Push' },
+  { url: 'assets/imgproyectos/quick/Alexa_skills.png', desc: 'Skills con Alexa para hacer compra de productos' }
       ],
       tecnologias: ['Angular', 'Express','Node js','Ionic','javascript','Typescript','Figma', 'MongoDB', 'Bootstrap','JWT','PWA','Github','ci/cd', 'Jira','Render','Firebase','Jest','Postman','Jasmine','Docker']
     },
     {
       id: 3,
       titulo: 'Portal de Asesorias - UTHH',
-      imagen: 'https://i.ibb.co/kVM2FzvT/inicio-sesion.png',
+      imagen: 'assets/imgproyectos/uthh/inicio_sesion.png',
       empresa: 'UTHH',
       rol:'Desarrollador full-stack',
       fecha: ' 01/05/2022 - 20/08/2022',
@@ -215,16 +215,16 @@ export class Profesionales implements AfterViewInit, OnDestroy {
         + 'tutores (visualizar información de alumnos con bajo rendimiento), y alumnos (visualizar y confirmar asistencia a asesorías), '
         + 'atendiendo la necesidad del área de Tecnologías de la Información de la Universidad Tecnológica de la Huasteca Hidalguense en Hidalgo.',
       imagenes: [
-        { url: 'https://i.ibb.co/kVM2FzvT/inicio-sesion.png', desc: 'Inicio de sesión del Portal' },
-        { url: 'https://i.ibb.co/Hfb5RF3m/agendar-asesorias.png', desc: 'Modulos del docente' },
-        { url: 'https://i.ibb.co/q3dKnq1g/reporte-asesorias.png', desc: 'Creación de reportes' },
-        { url: 'https://i.ibb.co/qLLDBj92/asesorias-lista.png', desc: 'Modulos del alumno' },
-        { url: 'https://i.ibb.co/bRHMs870/inicio-sesion-movil.png', desc: 'Login en app móvil' },
-        { url: 'https://i.ibb.co/1fPWvwy1/lista-de-alumnos-docente.png', desc: 'Asesorias que impartirá el docente' },
-        { url: 'https://i.ibb.co/S4c4SWLK/lista-docente.png', desc: 'Lista de Asistencia' },
-        { url: 'https://i.ibb.co/0jxPWd4v/alumno-asesorias.png', desc: 'Lista de asesorías del alumno' },
-        { url: 'https://i.ibb.co/ymjDk4fv/alumno-confirmar.png', desc: 'Confirmación de asistencia y validación de firma' }      
-      ],
+  { url: 'assets/imgproyectos/uthh/inicio_sesion.png', desc: 'Inicio de sesión del Portal' },
+  { url: 'assets/imgproyectos/uthh/agendar_asesorias.png', desc: 'Modulos del docente' },
+  { url: 'assets/imgproyectos/uthh/reporte_asesorias.png', desc: 'Creación de reportes' },
+  { url: 'assets/imgproyectos/uthh/asesorias_lista.png', desc: 'Modulos del alumno' },
+  { url: 'assets/imgproyectos/uthh/inicio_sesion_movil.png', desc: 'Login en app móvil' },
+  { url: 'assets/imgproyectos/uthh/lista_de_alumnos_docente.png', desc: 'Asesorias que impartirá el docente' },
+  { url: 'assets/imgproyectos/uthh/lista_docente.png', desc: 'Lista de Asistencia' },
+  { url: 'assets/imgproyectos/uthh/alumno_asesorias.png', desc: 'Lista de asesorías del alumno' },
+  { url: 'assets/imgproyectos/uthh/alumno_confirmar.png', desc: 'Confirmación de asistencia y validación de firma' }
+],
       tecnologias: ['React', 'Express', 'Node js', 'Sql Server', 'Javascript','Java','Figma','Android Studio','Firebase','Github','ci/cd', 'Vercel','Firebase','Jest','Postman','Jasmine','Docker']
     }
   ];

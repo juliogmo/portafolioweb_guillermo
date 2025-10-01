@@ -124,12 +124,15 @@
   font-size: 1.2rem;
   line-height: 1.6;
   color: #dce7ff;
-  max-width: 720px;
   background: rgba(0, 0, 0, 0.7);
   padding: 12px 18px;
   border-left: 4px solid #06b6d4;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 238, 255, 0.2);
+
+  box-sizing: border-box; /* incluye padding dentro del ancho */
+  max-width: 100%;        /* nunca más ancho que el contenedor padre */
+  overflow-wrap: break-word; /* fuerza a cortar palabras largas */
 }
 
 /* Palabras destacadas con borde */
@@ -173,6 +176,10 @@
 
   .developer-img {
     max-width: 70%;
+  }
+    .description {
+    max-width: 90%;
+    padding: 12px 18px;
   }
 }
 

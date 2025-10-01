@@ -99,13 +99,13 @@
 /* 📱 Responsivo */
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction:row;
+    text-align:justify;
   }
 
   .about-photo img {
-    width: 200px;
-    height: 240px;
+    width: 180px;
+    height: 220px;
   }
 
   .about-text h2 {
