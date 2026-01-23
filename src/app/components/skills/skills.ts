@@ -11,17 +11,17 @@ import { CommonModule } from '@angular/common'; // 👈 Importa CommonModule
 })
 export class Skills {
   categories = [
-    { name: 'Lenguajes de Programación', items: ['JavaScript','TypeScript','Python','C#','Java','PHP','C++'] },
+    { name: 'Lenguajes de Programación', items: ['JavaScript','TypeScript','Python','C#'] },
     { name: 'Frontend', items: ['Angular','React','HTML5','CSS3','Figma','Bootstrap','Tailwind CSS'] },
-    { name: 'Backend', items: ['Node.js','Express.js','ASP.NET','Flask','Fast API','Django'] },
+    { name: 'Backend', items: ['Node.js','Express.js','ASP.NET','Fast API'] },
     { name: 'Web & APIs', items: ['WebSocket','RESTful APIs','JWT'] },
-    { name: 'Bases de Datos', items: ['MySQL','Sql Server','PostgreSQL','MongoDB','Azure DB'] },
-    { name: 'Desarrollo Móvil', items: ['React Native','Ionic','Java/Kotlin'] },
-    { name: 'DevOps & Cloud', items: ['Docker','CI/CD Pipelines','Git','GitHub','Jira','Trello','Vercel','Render','Firebase','Azure','ServiceNow'] },
+    { name: 'Bases de Datos', items: ['MySQL','Sql Server','PostgreSQL','MongoDB'] },
+    { name: 'Desarrollo Móvil', items: ['React Native','Ionic'] },
+    { name: 'DevOps & Cloud', items: ['Docker','Git','GitHub','Jira','Vercel','Render','Firebase','Azure'] },
     { name: 'Pruebas', items: ['Jest','Jasmine','Postman','Cypress','Integration Testing'] },
-    { name: 'Metodologías', items: ['SCRUM','Kanban','XP','ITIL'] },
-    { name: 'Data & Machine Learning', items: ['TensorFlow','Keras','Scikit-learn','Pandas','NumPy','CNN','Data Visualization'] },
-    { name: 'Herramientas Empresariales e Inteligencia de Negocios', items: ['Power BI','Tableau','Data Analysis','Excel', 'ServiceNow', 'SAP'] }
+    { name: 'Metodologías', items: ['SCRUM','Kanban'] },
+    { name: 'Data & Machine Learning', items: ['TensorFlow','Keras','Scikit-learn','Pandas','NumPy','CNN'] },
+    { name: 'Herramientas Empresariales e Inteligencia de Negocios', items: ['Power BI','Tableau','Excel', 'ServiceNow', 'SAP'] }
   ];
 
   getSkillIcon(skill: string): string {
