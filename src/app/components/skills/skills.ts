@@ -38,7 +38,7 @@ export class Skills {
   'css3': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   'django': 'https://1000marcas.net/wp-content/uploads/2021/06/Django-Logo.png',
   'docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-  'express.js': 'https://cdn.worldvectorlogo.com/logos/expressjs.svg',
+  'express.js': 'https://www.clementkoenig.fr/img/express.png',
   'fast api': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
   'figma': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
   'firebase': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
